@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>calculator</title>
+  </head>
+  <link rel="stylesheet" href="cal.css" />
+  <body>
+    <div class="main">
+      <div class="cal">
+        <h3 class="heading">Calculator</h3>
+        <div class="display">
+          <p class="bottom"></p>
+        </div>
+        <div class="keypad">
+          <div class="rows">
+            <button class="accclear" onclick="accclear()">AC</button>
+            <button class="clear" onclick="oneclear()">C</button>
+            <button class="operator" onclick="appendToDisplay('%')">%</button>
+            <button class="operator" onclick="appendToDisplay('/')">/</button>
+          </div>
+          <div class="rows">
+            <button class="number" onclick="appendToDisplay('7')">7</button>
+            <button class="number" onclick="appendToDisplay('8')">8</button>
+            <button class="number" onclick="appendToDisplay('9')">9</button>
+            <button class="operator" onclick="appendToDisplay('*')">*</button>
+          </div>
+          <div class="rows">
+            <button class="number" onclick="appendToDisplay('4')">4</button>
+            <button class="number" onclick="appendToDisplay('5')">5</button>
+            <button class="number" onclick="appendToDisplay('6')">6</button>
+            <button class="operator" onclick="appendToDisplay('-')">-</button>
+          </div>
+          <div class="rows">
+            <button class="number" onclick="appendToDisplay('1')">1</button>
+            <button class="number" onclick="appendToDisplay('2')">2</button>
+            <button class="number" onclick="appendToDisplay('3')">3</button>
+
+            <button class="operator" onclick="appendToDisplay('+')">+</button>
+          </div>
+          <div class="rows">
+            <button class="number" onclick="appendToDisplay('00')">00</button>
+            <button class="number" onclick="appendToDisplay('0')">0</button>
+            <button class="number" onclick="appendToDisplay('.')">.</button>
+
+            <button class="operator" onclick="cal()">=</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="cal.js"></script>
+  </body>
+</html>

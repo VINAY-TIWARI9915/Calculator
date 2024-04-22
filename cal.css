@@ -1,0 +1,78 @@
+body {
+  background-color: rgb(171, 171, 171);
+}
+.main {
+  background-color: rgb(127, 158, 191);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  width: 310px;
+  height: 480px;
+  padding: 10px;
+  border-radius: 20px;
+  box-shadow: -8px -8px 5px rgb(99, 99, 98);
+}
+button {
+  width: 50px;
+  height: 50px;
+  border-radius: 15px;
+  background-color: RGB(151, 158, 158);
+  color: white;
+  font-size: 22px;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 600;
+  box-shadow: -5px -2px 2px rgb(99, 99, 98);
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.cal {
+  border: 2px solid rgb(29, 28, 28);
+  padding: 10px;
+  border-radius: 20px;
+}
+.display {
+  width: 98%;
+  height: 80px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  background-color: rgb(63, 72, 88);
+  color: white;
+  display: flex;
+  justify-content: end;
+  align-items: last baseline;
+  overflow-x: hidden;
+}
+.bottom {
+  font-size: 30px;
+  margin-right: 10px;
+}
+.rows {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 10px;
+}
+.heading {
+  color: rgb(14, 4, 4);
+  text-align: center;
+  font-size: 22px;
+  font-weight: bolder;
+}
+.operator {
+  background-color: RGB(126, 121, 124);
+  color: white;
+  font-weight: bolder;
+}
+.clear,
+.accclear {
+  background-color: RGB(46, 57, 76);
+  color: white;
+  font-weight: bolder;
+}
+
+button:active {
+  background-color: white;
+  color: black;
+}
